@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Opticare</title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://cdn.bootcss.com/popper.js/1.29.9/umd/popper.min.js"></script>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet" />
+</head>
+<body>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 200px;
+            background-color: #98d2e4;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+
+        header {
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            flex-direction: column;
+        }
+
+        .column {
+            flex: 1;
+            margin: 10px 0;
+            padding: 5px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .box1 {
+            background-color: #ffffff;
+            position: relative;
+            padding: 50px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .box2 {
+            background-color: #98d2e4;
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .h3 {
+            margin: 0;
+            padding: 10px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 16px;
+            font-family: Roboto;
+            color: #fff;
+            background-color: #b29bac;
+        }
+
+        .tabcontent {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        /* Style for active tab content */
+        .active {
+            display: block;
+        }
+
+        .tablinks {
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+        }
+
+        .tablink {
+            padding: 10px 20px;
+            background-color: #460035;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-wrapper">
+        <header>
+            <h1>DRD!</h1>
+        </header>
+    </div>
+    
+    <div class="container">
+        <div class="column">
+            <div class="box1">
+                <h2>Our platform is used for detection of diabetic retinopathy</h2>
+            </div>
+        </div>
+        <div class="column">
+            <div class="box2">
+                <h2></h2>
+                <h3><a href="index.html">click here to upload image</a></h3>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
